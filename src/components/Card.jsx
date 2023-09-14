@@ -1,8 +1,7 @@
-import { useContext } from 'react';
-import { AuthContext } from '../contexts/AuthContext';
+import { useAuth } from '../hooks/useAuth';
 
 function Card() {
-  const { token } = useContext(AuthContext);
+  const { token } = useAuth();
 
   return (
     <>

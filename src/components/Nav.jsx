@@ -1,8 +1,7 @@
-import { useContext } from 'react';
-import { AuthContext } from '../contexts/AuthContext';
+import { useAuth } from '../hooks/useAuth';
 
 function Nav() {
-  const { setToken } = useContext(AuthContext);
+  const { setToken } = useAuth();
 
   return (
     <nav>
