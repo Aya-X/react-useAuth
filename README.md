@@ -14,6 +14,10 @@
 
 > <https://react.dev/reference/react/createContext#createcontext>
 
+## Best Practice
+
+> <https://pjchender.dev/react/react-context-provider-api/#-usecontext-best-practice>
+
 ---
 
 ## React + Vite
