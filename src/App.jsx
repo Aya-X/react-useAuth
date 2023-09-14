@@ -1,5 +1,7 @@
 import { useState } from 'react';
 
+import { AuthContext } from './contexts/AuthContext';
+
 import Nav from './components/Nav';
 import Article from './components/Article';
 
@@ -8,12 +10,14 @@ function App() {
 
   return (
     <>
-      <h1>App</h1>
+      <AuthContext.Provider value={{ token, setToken }}>
+        <h1>App</h1>
 
-      <Nav setToken={setToken}/>
-      <hr />
+        <Nav />
+        <hr />
 
-      <Article token={token}/>
+        <Article />
+      </AuthContext.Provider>
     </>
   );
 }

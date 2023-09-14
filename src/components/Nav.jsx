@@ -1,5 +1,8 @@
-function Nav(props) {
-  const { setToken } = props;
+import { useContext } from 'react';
+import { AuthContext } from '../contexts/AuthContext';
+
+function Nav() {
+  const { setToken } = useContext(AuthContext);
 
   return (
     <nav>

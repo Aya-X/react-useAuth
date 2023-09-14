@@ -1,8 +1,6 @@
 import Card from './Card';
 
-function Article(props) {
-  const { token } = props;
-
+function Article() {
   return (
     <>
       <p>
@@ -11,7 +9,7 @@ function Article(props) {
 
       <hr />
 
-      <Card token={token}/>
+      <Card />
     </>
   );
 }

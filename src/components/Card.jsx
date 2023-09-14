@@ -1,5 +1,8 @@
-function Card(props) {
-  const { token } = props;
+import { useContext } from 'react';
+import { AuthContext } from '../contexts/AuthContext';
+
+function Card() {
+  const { token } = useContext(AuthContext);
 
   return (
     <>
